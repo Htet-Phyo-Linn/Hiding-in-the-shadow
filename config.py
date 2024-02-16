@@ -1,0 +1,6 @@
+key_file = "key.txt"
+password = b"password text"
+log_file = "encrypt.log"
+original_folder_path = "/home/guardiau-devil/code/Security Project/inputFolder/"
+encrypted_folder_path = "/home/guardiau-devil/code/Security Project/EncryptedOutputFolder/"
+decrypted_folder_path = "/home/guardiau-devil/code/Security Project/DecryptedOutputFolder/"

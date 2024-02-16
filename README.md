@@ -8,6 +8,6 @@ Encryption and decryption using Python. We utilize the ChaCha20 and SHA-256 hash
 2. Run
 
 ```
-	pip3 install cryptography
-	python3 main.py
+pip3 install cryptography
+python3 main.py
 ```

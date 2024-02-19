@@ -1,16 +1,6 @@
 from filelist import *
 
 
-def decode_binary_string(binary_string, encodings=['utf-8', 'latin-1', 'ascii']):
-    for encoding in encodings:
-        try:
-            text_string = binary_string.decode(encoding)
-            return text_string
-        except UnicodeDecodeError:
-            pass
-    return None
-
-
 def encrypt_file_function(key, input_file, output_file):
     iv = os.urandom(16)
     cipher = Cipher(algorithms.ChaCha20(key, iv), mode=None)

@@ -35,10 +35,12 @@ if deOrNot == '1':
                 ciphertext_with_iv = f.read()
             
             decrypt_file_function(key, ciphertext_with_iv, original_name)  
+
                 
-            print("Encrypted data Decrypted to:")
-            for key, value in original_names.items():
-                print(f"{key}: {value}")
+        print("Encrypted data Decrypted to:")
+        for key, value in original_names.items():
+            print(f"{key}: {value}")
+
     else :
         print("Folder not exist!!!")
 

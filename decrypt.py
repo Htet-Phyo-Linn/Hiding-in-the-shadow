@@ -1,6 +1,16 @@
 from filelist import *
 
 
+def decode_binary_string(binary_string, encodings=['utf-8', 'latin-1', 'ascii']):
+    for encoding in encodings:
+        try:
+            text_string = binary_string.decode(encoding)
+            return text_string
+        except UnicodeDecodeError:
+            pass
+    return None
+
+
 def decrypt_file_function(key, ciphertext_with_iv, original_name):
     iv = ciphertext_with_iv[:16]  # Extract IV from the ciphertext
     ciphertext = ciphertext_with_iv[16:]  # Extract ciphertext without IV
